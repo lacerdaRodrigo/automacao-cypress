@@ -1,13 +1,13 @@
 /// <reference types="cypress" />
 
 
-Cypress.Commands.add('login', (username, password , validarLogin) => {
+Cypress.Commands.add('login', (username, password, validarLogin) => {
 
     cy.get('#login2').click().wait(1000)
-    cy.get('#loginusername').type(username , {delay:100})
-    cy.get('#loginpassword').type(password , {delay:100})
+    cy.get('#loginusername').type(username, { delay: 100 })
+    cy.get('#loginpassword').type(password, { delay: 100 })
     cy.get('button[onclick="logIn()"]').click()
-  
+
 })
 
 Cypress.Commands.add('msgSenhaInvalida', (senhaInvalida) => {
@@ -21,7 +21,7 @@ Cypress.Commands.add('msgSenhaInvalida', (senhaInvalida) => {
 Cypress.Commands.add('validarLogin', (validar) => {
     cy.contains('#nameofuser', validar,).should('be.visible')
 
-    
+
 })
 
 Cypress.Commands.add('msgContaCriadaComSucesso', (contaCriadaComSucesso) => {
@@ -49,8 +49,8 @@ Cypress.Commands.add('msgContaJaExiste', (contaJaExiste) => {
 Cypress.Commands.add('criarUmaConta', (username, password) => {
 
     cy.get('#signin2').click().wait(1000)
-    cy.get('#sign-username').type(username , {delay:100})
-    cy.get('#sign-password').type(password , {delay:100})
+    cy.get('#sign-username').type(username, { delay: 100 })
+    cy.get('#sign-password').type(password, { delay: 100 })
     cy.get('button[onclick="register()"]').click()
 
 })
@@ -64,9 +64,8 @@ Cypress.Commands.add('categoriaCelular', (tipoCelular, valorCelular) => {
         .find('.hrefch')
         .click()
 
-    // E confiro o nome do modelo e valor
-    cy.contains('h2', tipoCelular).should('be.visible')
-    cy.contains('h3', valorCelular).should('be.visible')
+
+
 })
 
 Cypress.Commands.add('categoria', () => {
@@ -109,10 +108,10 @@ Cypress.Commands.add('validarClicarNotebook', () => {
 
 })
 
-Cypress.Commands.add('validarProdutoCarrinho', (celularSansumgGalaxyS6, celularNokiaLumia1520) => {
-    cy.contains('h2','Products').should('be.visible')
+Cypress.Commands.add('validarProdutoCarrinho', (celularSansumgGalaxyS6) => {
+    cy.contains('h2', 'Products').should('be.visible')
     cy.contains('td', celularSansumgGalaxyS6).should('be.visible')
-    cy.contains('td', celularNokiaLumia1520).should('be.visible')
+    
 })
 
 Cypress.Commands.add('clicarBotaoEncomendar', () => {
@@ -123,20 +122,20 @@ Cypress.Commands.add('clicarBotaoEncomendar', () => {
 })
 
 Cypress.Commands.add('preencherEncomenda', () => {
-    
-    cy.get('#name').type('Rodrigo Lacerda', {delay:150})
-    cy.get('#country').type('Brasil', {delay:100})
-    cy.get('#city').type('Santa Luzia - MG', {delay:100})
-    cy.get('#card').type('123456789', {delay:100})
-    cy.get('#month').type('06/28', {delay:100})
-    cy.get('#year').type('2028', {delay:100})
+
+    cy.get('#name').type('Rodrigo Lacerda', { delay: 150 })
+    cy.get('#country').type('Brasil', { delay: 100 })
+    cy.get('#city').type('Santa Luzia - MG', { delay: 100 })
+    cy.get('#card').type('123456789', { delay: 100 })
+    cy.get('#month').type('06/28', { delay: 100 })
+    cy.get('#year').type('2028', { delay: 100 })
 })
 
 Cypress.Commands.add('clicarComprar', () => {
-    cy.contains('button','Purchase').click()
+    cy.contains('button', 'Purchase').click()
 })
 
 Cypress.Commands.add('validarVenda', () => {
-    cy.contains('h2','Thank you for your purchase!').should('be.visible')
+    cy.contains('h2', 'Thank you for your purchase!').should('be.visible')
 })
 

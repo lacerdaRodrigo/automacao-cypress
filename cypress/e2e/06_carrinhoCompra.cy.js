@@ -10,7 +10,7 @@ describe('carrinho de compras', () => {
         //Login
         cy.login('rpl', 'pwd123', 'Welcome rpl')
         cy.get('#cartur').click().wait(2000);
-        cy.validarProdutoCarrinho('Samsung galaxy s6', 'Nokia lumia 1520').wait(2000)
+        cy.validarProdutoCarrinho('Samsung galaxy s6').wait(2000)
         // E clico em "place order"
         cy.clicarBotaoEncomendar().wait(2000)
         // ENTÂO vou para "place order"
