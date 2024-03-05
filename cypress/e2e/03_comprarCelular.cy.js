@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 
-describe('criar conta', () => {
+describe('adicionar celular em carrinho', () => {
 
 
     it('adicionar ao carrinho celular Samsung galaxy s6', () => {

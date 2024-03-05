@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('criar conta', () => {
+describe('adicionar notebook em carrinho ', () => {
 
 
     it('comprar notebook', () => {

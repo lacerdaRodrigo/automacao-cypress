@@ -5,11 +5,10 @@
   "main": "index.js",
   "author": "Rodrigo Lacerda",
   "license": "MIT",
-  "scripts": {
-    "run-tests": "cypress run --spec 'criarUmaConta.cy.js,fazerLogin.cy.js,comprarCelular.cy.js,'"
-  },
   "devDependencies": {
     "cypress": "^13.6.6"
   }
+
+  
 }
 
