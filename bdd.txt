@@ -1,0 +1,39 @@
+
+
+
+   // adicionar ao carrinho celular Samsung galaxy s6
+DADO que tenho que comprar um Nokia lumia 1520
+QUANDO clico nele 
+E confiro o nome do modelo e valor
+E clico em "add to cart"
+ENTÂO volto para a tela principal "HOME"
+
+
+    //adicionar celular ao carrinho Nokia lumia 1520
+DADO que tenho que comprar um Nokia lumia 1520
+QUANDO clico nele 
+E confiro o nome do modelo e valor
+E clico em "add to cart"
+ENTÂO volto para a tela principal "HOME"
+
+
+    //fazer a venda que esta no carrinho
+DADO que ja tenho os produtos no meu carrinho. 
+QUANDO clico no "CART"
+E valido meus produtos "samsung galaxy s6"
+E valido meus produtos "Nokia lumia 1520"
+E clico em "place order"
+ENTÂO vou para "place order"
+E preencho os campos 
+E clico em comprar
+
+
+
+
+
+
+
+
+
+
+npm run run-tests

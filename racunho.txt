@@ -1,0 +1,22 @@
+
+
+Busca de elementos;
+
+# : vai Busca por id no elementos web
+. : Vai buscar por classe no elementos web
+xxx[NomeDoElemento = "elemto " ] : Vai receber um valor de um elemento web , ex : input , placeHolder , nome ...
+
+
+
+
+
+
+
+Nomes de funçoes.
+
+visit : visitar um site 
+get : encontrar um elemento 
+type : escrever no elemento encontrado
+click : Clicar no botão ou campo desejado
+should : Fazer verificações via ser usado junto ( have text , be.visible ....)
+Contains : ter um texto ou algum objeto no seu site que vc que buscar aquele nome 
