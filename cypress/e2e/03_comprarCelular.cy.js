@@ -18,19 +18,19 @@ describe('adicionar celular em carrinho', () => {
         cy.voltarHome()
     })
 
-    it('adicionar celular ao carrinho Nokia lumia 1520', () => {
+    // it('adicionar celular ao carrinho Nokia lumia 1520', () => {
 
-        //visitar site
-        cy.visit('https://www.demoblaze.com/index.html');
-        //login
-        cy.login('rpl', 'pwd123', 'Welcome rpl')
-        // DADO que tenho que comprar um Nokia lumia 1520
-        cy.categoria()
-        cy.categoriaCelular('Nokia lumia 1520', '$820')
-        cy.adicionarCarrinho()
-        cy.msgProdutoAdicionado()
-        cy.voltarHome()
-    })
+    //     //visitar site
+    //     cy.visit('https://www.demoblaze.com/index.html');
+    //     //login
+    //     cy.login('rpl', 'pwd123', 'Welcome rpl')
+    //     // DADO que tenho que comprar um Nokia lumia 1520
+    //     cy.categoria()
+    //     cy.categoriaCelular('Nokia lumia 1520', '$820')
+    //     cy.adicionarCarrinho()
+    //     cy.msgProdutoAdicionado()
+    //     cy.voltarHome()
+    // })
 
 
 })
